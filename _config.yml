@@ -10,10 +10,10 @@ name: Abdul Malek
 title: Software Engineer
 email: me@abdl.dev
 email_title: EMAIL
-phone: (646) 552-1769
-phone_title: PHONE
 website: abdl.dev
 website_title: Website
+phone: (646) 552-1769
+phone_title: PHONE
 
 # Dark Mode (true/false/never)
 darkmode: true
@@ -60,9 +60,9 @@ content:
         link: github.com/sproogen
         link_text: Project Website
         additional_links:
-          - title:  sproogen/modern-resume-theme
+          - title:  abdl-dev/theme
             icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
+            url: github.com/abdl-dev/theme
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
@@ -114,7 +114,7 @@ footer_show_references: true
 # theme: modern-resume-theme
 
 sass:
-  sass_dir: _sass
+  sass_dir: _scss
   style: compressed
 
 plugins:
