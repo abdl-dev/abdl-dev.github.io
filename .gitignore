@@ -1,3 +1,4 @@
-blank
 .jekyll-cache
+.sass-cache
 _site
+Gemfile.lock
