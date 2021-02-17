@@ -1,6 +1,6 @@
 # Site
 repository: abdl-dev/abdl-dev.github.io
-favicon: assets/img/icon.png
+favicon: assets/icon.png
 
 # Content configuration version
 version: 2
@@ -21,17 +21,11 @@ darkmode: true
 # Social Links
 github_username: abdl-dev
 linkedin_username: abdl
-resume_link: assets/doc/resume.pdf
-
-# Additional icon links
-# additional_links:
-# - title: Résumé
-#   icon: fas fa-align-left
-#   url: assets/abdl-dev.pdf
+resume_link: assets/resume.pdf
 
 # About Section
 about_title: About Me
-about_profile_image: assets/img/profile.jpg
+about_profile_image: assets/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name is Abdul and I'm a software engineer. I am most skilled in <mark>AWS</mark>.
 
