@@ -3,7 +3,7 @@ repository: abdl-dev/abdl-dev.github.io
 favicon: assets/icon.png
 
 # Content configuration version
-version: 2
+version: 2 # get rid of this later
 
 # Personal Info
 name: Abdul Malek
@@ -27,11 +27,29 @@ resume_link: assets/resume.pdf
 about_title: About Me
 about_profile_image: assets/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name is Abdul and I'm a software engineer. I am most skilled in <mark>AWS</mark>.
+  Hello, my name is Abdul and I'm a software engineer based in <mark>NYC</mark>.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: Saint Louis University
+        caption: 1 North Grand Boulevard, St. Louis, MO 63103
+        sub_title: Computer Science
+        sub_title: Mathematics
+
+      - layout: left
+        title: Hunter College
+        sub_title: 695 Park Ave, New York, NY 10065
+
+      - layout: left
+        title: Stuyvesant High School
+        caption: 345 Chambers St, New York, NY 10282
+
+
+  - title: Projects & Work Experience
+    layout: list
     content:
       - layout: left
         title: Project Title
@@ -60,18 +78,6 @@ content:
         description: |
             Description of work there
 
-  - title: Education
-    layout: list
-    content:
-      - layout: left
-        title: University
-        caption: 2020 - 2020
-        sub_title: BSc Computer Science
-        quote: >
-          Tagline
-        description: |
-          Description
-  
   - title: Skills
     layout: text
     content: |
