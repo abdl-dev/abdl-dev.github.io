@@ -9,11 +9,10 @@ version: 2 # get rid of this later
 name: Abdul Malek
 title: Software Engineer
 email: me@abdl.dev
-email_title: EMAIL
-website: abdl.dev
-website_title: Website
+email_title: E-Mail
 phone: (646) 552-1769
-phone_title: PHONE
+phone_title: Phone
+location: New York, NY
 
 # Dark Mode (true/false/never)
 darkmode: true
@@ -23,65 +22,100 @@ github_username: abdl-dev
 linkedin_username: abdl
 resume_link: assets/resume.pdf
 
-# About Section
-about_title: About Me
 about_profile_image: assets/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
-  Hello, my name is Abdul and I'm a software engineer based in <mark>NYC</mark>.
 
 content:
-  - title: Education
+  - title: EDUCATION
     layout: list
     content:
       - layout: left
         title: Saint Louis University
         caption: 1 North Grand Boulevard, St. Louis, MO 63103
-        sub_title: Computer Science
-        sub_title: Mathematics
+        description: |
+            - Major: Computer Science
+            - Minor: Mathematics
 
       - layout: left
         title: Hunter College
-        sub_title: 695 Park Ave, New York, NY 10065
+        caption: 695 Park Ave, New York, NY 10065
 
       - layout: left
         title: Stuyvesant High School
         caption: 345 Chambers St, New York, NY 10282
 
 
-  - title: Projects & Work Experience
+  - title: PROJECTS & WORK EXPERIENCE
     layout: list
     content:
       - layout: left
-        title: Project Title
-        link: Link.com/link
-        link_text: Link hover text
-        additional_links:
-          - title:  My theme thingy
-            icon: fab fa-github
-            url: github.com/abdl-dev/theme
+        title: DevOps at Intersection
         quote: >
-          Project tagline
+          // Formerly, Control Group
         description: |
-          Project description
+          Worked with DevOps team to build an internal python-based web application that interfaced
+          with several AWS services to provide user-friendly, human-interpretable Zendesk tickets
+          for company clients. Currently in production status.
 
-  - title: Experience
-    layout: list
-    content:
       - layout: left
-        title: Company Title
-        link: company.com
-        link_text: boringcompany.com
-        sub_title: Position at Company
-        caption: 2020 - 2020
+        title: Quadrocopter Development at Intersection
         quote: >
-            Tagline
+          // Formerly, Control Group
         description: |
-            Description of work there
+          Worked with a small team with robotics experience to build and program an
+          ArduPilot-controlled UAV incorporating GPS, magnetometer-based orientation, sonar-based
+          speed control, and an accelerometer/gyroscope for feedback.
 
-  - title: Skills
+      - layout: left
+        title: Programming & Security Competitions
+        quote: >
+          // ICPC, CSAW CTF, UFO CTF, & picoCTF
+        description: |
+          Competed in the International Collegiate Programming Contest (ICPC). Competed in several
+          capture-the-flag (CTF) style hacking/security competitions. Competitively solved
+          challenges involving binary exploitation, forensics, reverse engineering, script
+          exploitation, and cryptography. Ranked 38th internationally in UFO CTF and 42nd nationally
+          in picoCTF. (Team Qubit)
+
+      - layout: left
+        title: LWJGL Game Development
+        description: |
+          Developed 3D arcade game that interfaces with a server, with dynamic web content
+          displaying animated score updates in real time, incorporating multiple graphics and web
+          development tools/libraries.
+
+      - layout: left
+        title: NetLogo Game Development
+        description: |
+          Developed multiple fully featured ports of popular mobile games, rewritten in NetLogo.
+          Games include Defender, a feature-complete port of a dynamic-difficulty wave defense game,
+          Line Runner, and a variation of B-Shooter.
+
+      - layout: left
+        title: Stuy++
+        description: |
+          Started and led team with varying experience in development of new technology to modernize
+          school. Developed networked monitoring system (wireless mesh) for unreliable escalators
+          using Arduino and XBee.
+
+      - layout: left
+        title: Software Engineering at FIRST Robotics
+        description: |
+          Led team in developing software for multi-system robot. Won first place at New York City
+          Regional, won Chairman’s Award at Connecticut Regional, and competed in the FIRST
+          Championship. (FRC)
+
+      - layout: left
+        description: |
+          **Miscellaneous:** Putnam Mathematical Competition, TEDxStuyvesantHS (Organizer)
+
+
+  - title: TECHNICAL SKILLS
     layout: text
     content: |
-      Extra interests and skills.
+        **Languages:** Python, C, C++, Java, JavaScript, Haskell, Go, x86, Lisp/Scheme\
+        **Skills:** Linux, Git, Vim, AWS, SQL, Node.js, Flask, OpenGL, LWJGL, Arduino\
+        **Experience:** distributed systems, operating systems, dynamic programming, natural
+        language processing, security, cryptography, compilers, graphics, web, various math
 
 # Footer
 # footer_show_references: false
@@ -94,3 +128,6 @@ plugins:
  # - Change all double quotes to single quotes
  # - Strip all unused variables from files
  # - Make all the site content indentations line up
+ # - Fix header alignment
+ # - fix h3 being small
+ # - Get everything to work with bootstrap 5.0 (particularly 3.4 -> 4.0 changes)
