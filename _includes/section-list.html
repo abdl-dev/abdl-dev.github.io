@@ -2,7 +2,10 @@
     {% for item in include.content %}
       <div class="layout layout-{{item.layout | default: 'left'}}">
         <div class="details">
-          <h4>{{ item.title }}</h4>
+          <h4 style="display: inline-block">{{ item.title }}</h4>
+          {%- if item.quote -%}
+            <p class="quote" style="display: inline-block">{{ item.quote }}</p>
+          {%- endif -%}
           {%- if item.sub_title -%}<p><b>{{ item.sub_title }}</b></p>{%- endif -%}
           {%- if item.caption -%}<p>{{ item.caption }}</p>{%- endif -%}
 
@@ -21,9 +24,6 @@
           </p>
         </div>
         <div class="content">
-          {%- if item.quote -%}
-            <p class="quote">{{ item.quote }}</p>
-          {%- endif -%}
           {{ item.description | strip | markdownify }}
         </div>
       </div>

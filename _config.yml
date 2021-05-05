@@ -124,11 +124,16 @@ references_title: Wat (Override references text)
 plugins:
  - jekyll-seo-tag
 
- # TODO
- # - Change all double quotes to single quotes
- # - Strip all unused variables from files
- # - Make all the site content indentations line up
- # - Fix header alignment
- # - fix h3 being small
- # - Get everything to work with bootstrap 5.0 (particularly 3.4 -> 4.0 changes)
- # - Add favicon.ico
+# TODO
+# - Change all double quotes to single quotes
+# - Strip all unused variables from files
+# - Make all the site content indentations line up
+# - Fix header alignment
+# - fix h3 being small
+# - Get everything to work with bootstrap 5.0 (particularly 3.4 -> 4.0 changes)
+# - Add favicon.ico
+# - fix usages of div class row
+# - consider making technical skills a section-list instead
+# - rewrite to only use .col-md
+# - figure out how to do axis text for contact info
+# - fix email underline

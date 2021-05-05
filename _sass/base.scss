@@ -179,7 +179,7 @@ body {
 }
 
 .header-right p {
-  font-size: 1.6rem;
+  font-size: 1.0rem;
   text-align: right;
 }
 
@@ -238,4 +238,12 @@ body {
   .no-print, .no-print * {
     display: none !important;
   }
+}
+
+@media print{
+    * {
+        color:#000!important
+        ;text-shadow:none!important;
+        background: white!important
+    }
 }
