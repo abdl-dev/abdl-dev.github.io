@@ -137,3 +137,4 @@ plugins:
 # - rewrite to only use .col-md
 # - figure out how to do axis text for contact info
 # - fix email underline
+# - figure out there being no margins on mobile
