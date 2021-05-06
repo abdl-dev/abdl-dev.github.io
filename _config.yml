@@ -118,8 +118,8 @@ content:
         language processing, security, cryptography, compilers, graphics, web, various math
 
 # Footer
-# footer_show_references: false
-references_title: Wat (Override references text)
+footer_show_references: true
+references_title: References available upon request
 
 plugins:
  - jekyll-seo-tag
@@ -137,3 +137,4 @@ plugins:
 # - rewrite to only use .col-md
 # - figure out how to do axis text for contact info
 # - fix email underline
+# - look at benkurtovic.com to see if I wanna include any elements
