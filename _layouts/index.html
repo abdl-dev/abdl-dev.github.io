@@ -18,7 +18,7 @@
         {% for section in site.content %}
           <div class="container {{ section.layout }}-container">
               <div class="row">
-            <div class="col-xs-12 col-sm-3 col-md-3 col-print-12">
+            <div class="col-12 col-md-3 col-print-12">
                 <h2>{{ section.title }}</h2>
             </div>
             {% include {{ section.layout | prepend: "section-" | append: ".html" }} content=section.content %}
