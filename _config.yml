@@ -1,21 +1,14 @@
 # Site
 repository: abdl-dev/abdl-dev.github.io
 favicon: assets/icon.png
-
-# Content configuration version
-version: 2 # get rid of this later
+colorscheme: dark
 
 # Personal Info
 name: Abdul Malek
 title: Software Engineer
 email: me@abdl.dev
-email_title: E-Mail
 phone: (646) 552-1769
-phone_title: Phone
 location: New York, NY
-
-# Dark Mode (true/false/never)
-darkmode: true
 
 # Social Links
 github_username: abdl-dev
@@ -40,7 +33,6 @@ content:
       - layout: left
         title: Stuyvesant High School
         caption: 345 Chambers St, New York, NY 10282
-
 
   - title: PROJECTS & WORK EXPERIENCE
     layout: list
@@ -106,7 +98,6 @@ content:
         description: |
           **Miscellaneous:** Putnam Mathematical Competition, TEDxStuyvesantHS (Organizer)
 
-
   - title: TECHNICAL SKILLS
     layout: text
     content: |
@@ -122,7 +113,9 @@ plugins:
 # - Change all double quotes to single quotes
 # - Strip all unused variables from files
 # - Make all the site content indentations line up
-# - Get everything to work with bootstrap 5.0 (particularly 3.4 -> 4.0 changes)
+# - change everything to 4-width hard tabs
+# - restructure all css
+# - restructure directory and files (remove unnecessary files)
 # - Add favicon.ico
 # - rewrite to only use .col-md
 # - figure out how to do axis text for contact info
