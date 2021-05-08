@@ -111,6 +111,7 @@ plugins:
 
 # TODO
 # - Change all double quotes to single quotes
+# - remove unnecessary Liquid strips
 # - separate light and dark css into named sections
 # - Strip all unused variables from files
 # - Make all the site content indentations line up
