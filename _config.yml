@@ -106,9 +106,6 @@ content:
         **Experience:** distributed systems, operating systems, dynamic programming, natural
         language processing, security, cryptography, compilers, graphics, web, various math
 
-plugins:
- - jekyll-seo-tag
-
 # TODO
 # - Change all double quotes to single quotes
 # - remove unnecessary Liquid strips

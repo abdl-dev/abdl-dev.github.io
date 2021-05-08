@@ -1,41 +1,28 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <script src="/assets/index.js"></script>
-
 	{%- include head.html -%}
-
 	<body>
-
 	{% if site.color-scheme == 'auto' %}
 	<script>autoColorScheme()</script>
 	{% else %}
 	<script>setColorScheme("{{ site.color-scheme }}")</script>
 	{% endif %}
-
 		{%- include header.html -%}
-
-		<main class="page-content">
+		<main>
 			<div class="wrapper">
-
-				{% if jekyll.environment == 'production' and site.gtm %}
-				{%- include gtm_body.html -%}
-				{% endif %}
-
 				{% for section in site.content %}
 				<div class="container {{ section.layout }}-container">
 					<div class="row">
 						<div class="col-12 col-md-3 col-print-12">
 							<h2>{{ section.title }}</h2>
 						</div>
-						{%- include {{ section.layout | prepend: "section-" | append: ".html" }} content=section.content -%}
+						{%- include section-{{ section.layout }}.html content=section.content -%}
 					</div>
 				</div>
 				{% endfor %}
-
 			</div>
 		</main>
-
 		{%- include footer.html -%}
-
 	</body>
 </html>
