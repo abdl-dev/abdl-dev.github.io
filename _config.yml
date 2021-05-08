@@ -1,7 +1,7 @@
 # Site
 repository: abdl-dev/abdl-dev.github.io
 favicon: assets/icon.png
-color-scheme: dark
+color-scheme: auto
 
 # Personal Info
 name: Abdul Malek
