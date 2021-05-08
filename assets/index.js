@@ -1,3 +1,16 @@
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  document.body.classList.add("dark");
+function currentYear() {
+	date = new Date();
+	return document.write(date.getFullYear());
+}
+
+function autoColorScheme() {
+	if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+		document.body.classList.add("light");
+	} else {
+		document.body.classList.add("dark");
+	}
+}
+
+function setColorScheme(scheme) {
+	document.body.classList.add(scheme);
 }

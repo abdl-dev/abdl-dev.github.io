@@ -7,23 +7,23 @@
         </div>
         <div class="col-12 col-md-4 header-right">
           <ul class="icons no-print">
-            {%- if site.github_username -%}
+            {%- if site.github-username -%}
               <li>
-                <a target="_self" href='https://github.com/{{ site.github_username | escape }}' class="button button--sacnite button--round-l">
+                <a target="_self" href='https://github.com/{{ site.github-username }}' class="button button--sacnite button--round-l">
                   <i class="fab fa-github" title="GitHub"></i>
                 </a>
               </li>
             {%- endif -%}
-            {%- if site.linkedin_username -%}
+            {%- if site.linkedin-username -%}
               <li>
-                <a target="_self" href='https://www.linkedin.com/in/{{ site.linkedin_username | escape }}' class="button button--sacnite button--round-l">
+                <a target="_self" href='https://www.linkedin.com/in/{{ site.linkedin-username }}' class="button button--sacnite button--round-l">
                   <i class="fab fa-linkedin" title="LinkedIn"></i>
                 </a>
               </li>
             {%- endif -%}
-            {%- if site.resume_link -%}
+            {%- if site.resume-link -%}
               <li>
-                <a target="_self" href='{{ site.resume_link | escape }}' class="button button--sacnite button--round-l">
+                <a target="_self" href='{{ site.resume-link }}' class="button button--sacnite button--round-l">
                   <i class="fas fa-align-left" title="Résumé"></i>
                 </a>
               </li>
@@ -42,7 +42,7 @@
           {%- endif -%}
           {%- if site.website -%}
             <p>
-              {{ site.website_title | default: "Web" }}: {% include a.html href=site.website %}{{ site.website | escape }}</a>
+              {{ site.website_title | default: "Web" }}: {%- include a.html href=site.website -%}{{ site.website | escape }}</a>
             </p>
           {%- endif -%}
         </div>

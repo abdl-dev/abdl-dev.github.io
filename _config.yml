@@ -1,7 +1,7 @@
 # Site
 repository: abdl-dev/abdl-dev.github.io
 favicon: assets/icon.png
-colorscheme: dark
+color-scheme: dark
 
 # Personal Info
 name: Abdul Malek
@@ -11,9 +11,9 @@ phone: (646) 552-1769
 location: New York, NY
 
 # Social Links
-github_username: abdl-dev
-linkedin_username: abdl
-resume_link: assets/resume.pdf
+github-username: abdl-dev
+linkedin-username: abdl
+resume-link: assets/resume.pdf
 
 content:
   - title: EDUCATION
@@ -111,6 +111,7 @@ plugins:
 
 # TODO
 # - Change all double quotes to single quotes
+# - separate light and dark css into named sections
 # - Strip all unused variables from files
 # - Make all the site content indentations line up
 # - change everything to 4-width hard tabs
