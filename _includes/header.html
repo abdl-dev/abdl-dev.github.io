@@ -1,29 +1,29 @@
 <div class="container header-container">
     <div class="row">
-        <div class="col-12 col-md-8 header-left">
+        <div class="col-12 col-md-7 header-left">
           <h1>{{ site.name }}</h1>
           <h3>{{ site.title }}</h3>
     	  <h5><mark>{{ site.location }}</mark></h5>
         </div>
-        <div class="col-12 col-md-4 header-right">
+        <div class="col-12 col-md-5 header-right">
           <ul class="icons no-print">
             {%- if site.github-username -%}
               <li>
-                <a target="_self" href='https://github.com/{{ site.github-username }}' class="button button--sacnite button--round-l">
+                <a target="_blank" href='https://github.com/{{ site.github-username }}' class="button button--sacnite button--round-l">
                   <i class="fab fa-github" title="GitHub"></i>
                 </a>
               </li>
             {%- endif -%}
             {%- if site.linkedin-username -%}
               <li>
-                <a target="_self" href='https://www.linkedin.com/in/{{ site.linkedin-username }}' class="button button--sacnite button--round-l">
+                <a target="_blank" href='https://www.linkedin.com/in/{{ site.linkedin-username }}' class="button button--sacnite button--round-l">
                   <i class="fab fa-linkedin" title="LinkedIn"></i>
                 </a>
               </li>
             {%- endif -%}
             {%- if site.resume-link -%}
               <li>
-                <a target="_self" href='{{ site.resume-link }}' class="button button--sacnite button--round-l">
+                <a target="_blank" href='{{ site.resume-link }}' class="button button--sacnite button--round-l">
                   <i class="fas fa-align-left" title="Résumé"></i>
                 </a>
               </li>
@@ -38,11 +38,6 @@
           {%- if site.phone -%}
             <p>
               {{ site.phone_title | default: "Phone" }}: {{ site.phone | escape }}
-            </p>
-          {%- endif -%}
-          {%- if site.website -%}
-            <p>
-              {{ site.website_title | default: "Web" }}: {%- include a.html href=site.website -%}{{ site.website | escape }}</a>
             </p>
           {%- endif -%}
         </div>

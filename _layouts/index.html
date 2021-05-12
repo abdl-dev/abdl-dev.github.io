@@ -10,18 +10,16 @@
 	{% endif %}
 		{%- include header.html -%}
 		<main>
-			<div class="wrapper">
-				{% for section in site.content %}
-				<div class="container {{ section.layout }}-container">
-					<div class="row">
-						<div class="col-12 col-md-3 col-print-12">
-							<h2>{{ section.title }}</h2>
-						</div>
-						{%- include section-{{ section.layout }}.html content=section.content -%}
+			{% for section in site.content %}
+			<div class="container {{ section.layout }}-container">
+				<div class="row">
+					<div class="col-12 col-md-3 col-print-12">
+						<h2>{{ section.title }}</h2>
 					</div>
+					{%- include section-{{ section.layout }}.html content=section.content -%}
 				</div>
-				{% endfor %}
 			</div>
+			{% endfor %}
 		</main>
 		{%- include footer.html -%}
 	</body>

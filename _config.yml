@@ -107,6 +107,7 @@ content:
         language processing, security, cryptography, compilers, graphics, web, various math
 
 # TODO
+# - fix messy a.html link handling
 # - Change all double quotes to single quotes
 # - remove unnecessary Liquid strips
 # - separate light and dark css into named sections
@@ -120,3 +121,4 @@ content:
 # - figure out how to do axis text for contact info
 # - fix email underline
 # - look at benkurtovic.com to see if I wanna include any elements (such as copyright)
+# - do separate branch that is bootstrap-free
