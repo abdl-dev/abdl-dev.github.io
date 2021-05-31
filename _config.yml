@@ -108,7 +108,7 @@ content:
 # TODO
 # - fix messy a.html link handling
 # - Change all double quotes to single quotes
-# - remove unnecessary Liquid strips
+# - remove/add unnecessary/necessary Liquid strips
 # - separate light and dark css into named sections
 # - Strip all unused variables from files
 # - Make all the site content indentations line up
