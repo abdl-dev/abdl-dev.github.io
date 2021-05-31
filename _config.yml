@@ -1,6 +1,5 @@
 # Site
 repository: abdl-dev/abdl-dev.github.io
-favicon: assets/icon.png
 color-scheme: auto
 
 # Personal Info
@@ -122,3 +121,4 @@ content:
 # - fix email underline
 # - look at benkurtovic.com to see if I wanna include any elements (such as copyright)
 # - do separate branch that is bootstrap-free
+# - consolidate section-list and section-text in one include with conditional

@@ -1,45 +1,34 @@
 <div class="container header-container">
-    <div class="row">
-        <div class="col-12 col-md-7 header-left">
-          <h1>{{ site.name }}</h1>
-          <h3>{{ site.title }}</h3>
-    	  <h5><mark>{{ site.location }}</mark></h5>
-        </div>
-        <div class="col-12 col-md-5 header-right">
-          <ul class="icons no-print">
-            {%- if site.github-username -%}
-              <li>
-                <a target="_blank" href='https://github.com/{{ site.github-username }}' class="button button--sacnite button--round-l">
-                  <i class="fab fa-github" title="GitHub"></i>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if site.linkedin-username -%}
-              <li>
-                <a target="_blank" href='https://www.linkedin.com/in/{{ site.linkedin-username }}' class="button button--sacnite button--round-l">
-                  <i class="fab fa-linkedin" title="LinkedIn"></i>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if site.resume-link -%}
-              <li>
-                <a target="_blank" href='{{ site.resume-link }}' class="button button--sacnite button--round-l">
-                  <i class="fas fa-align-left" title="Résumé"></i>
-                </a>
-              </li>
-            {%- endif -%}
-          </ul>
-
-          {%- if site.email -%}
-            <p>
-              {{ site.email_title | default: "Email" }}: <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
-            </p>
-          {%- endif -%}
-          {%- if site.phone -%}
-            <p>
-              {{ site.phone_title | default: "Phone" }}: {{ site.phone | escape }}
-            </p>
-          {%- endif -%}
-        </div>
-    </div>
+	<div class="row">
+		<div class="col-12 col-md-7 header-left">
+			<h1>{{ site.name }}</h1>
+			<h3>{{ site.title }}</h3>
+			<h5><mark>{{ site.location }}</mark></h5>
+		</div>
+		<div class="col-12 col-md-5 header-right">
+			<ul class="icons no-print">
+				<li>
+					<a href='https://github.com/{{ site.github-username }}' class="button button-circle">
+						<i class="fab fa-github" title="GitHub"></i>
+					</a>
+				</li>
+				<li>
+					<a href='https://www.linkedin.com/in/{{ site.linkedin-username }}' class="button button-circle">
+						<i class="fab fa-linkedin" title="LinkedIn"></i>
+					</a>
+				</li>
+				<li>
+					<a href='{{ site.resume-link }}' class="button button-circle">
+						<i class="fas fa-align-left" title="Résumé"></i>
+					</a>
+				</li>
+			</ul>
+			<p>
+				<a href="mailto:{{ site.email }}">{{ site.email }}</a> | <i class="fas fa-envelope-open"></i>
+			</p>
+			<p>
+				{{ site.phone }} | <i class="fas fa-phone-alt"></i>
+			</p>
+		</div>
+	</div>
 </div>
