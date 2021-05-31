@@ -3,17 +3,10 @@
       <div class="layout layout-{{item.layout | default: 'left'}}">
         <div class="details">
             {%- if item.title -%}<h4 style="display: inline-block">{{ item.title }}</h4>{%- endif -%}
-          {%- if item.quote -%}
-            <p class="quote" style="display: inline-block">{{ item.quote }}</p>
+          {%- if item.caption -%}
+            <p class="caption" style="display: inline-block">{{ item.caption }}</p>
           {%- endif -%}
-          {%- if item.sub_title -%}<p><b>{{ item.sub_title }}</b></p>{%- endif -%}
-          {%- if item.caption -%}<p>{{ item.caption }}</p>{%- endif -%}
-
-          {%- if item.link -%}
-            {%- include a.html href=item.link class="link" -%}
-              {%- if item.link_text -%}{{ item.link_text }}{%- else -%}{{ item.link }}{%- endif -%}
-            </a>
-          {%- endif -%}
+          {%- if item.sub_title -%}<p>{{ item.sub_title }}</p>{%- endif -%}
         </div>
         <div class="content">
           {{ item.description | strip | markdownify }}

@@ -10,9 +10,9 @@ phone: (646) 552-1769
 location: New York, NY
 
 # Social Links
-github-username: abdl-dev
-linkedin-username: abdl
-resume-link: assets/resume.pdf
+github: abdl-dev
+linkedin: abdl
+resume: assets/resume.pdf
 
 content:
   - title: EDUCATION
@@ -20,25 +20,25 @@ content:
     content:
       - layout: left
         title: Saint Louis University
-        caption: 1 North Grand Boulevard, St. Louis, MO 63103
+        sub_title: 1 North Grand Boulevard, St. Louis, MO 63103
         description: |
             - Major: Computer Science
             - Minor: Mathematics
 
       - layout: left
         title: Hunter College
-        caption: 695 Park Ave, New York, NY 10065
+        sub_title: 695 Park Ave, New York, NY 10065
 
       - layout: left
         title: Stuyvesant High School
-        caption: 345 Chambers St, New York, NY 10282
+        sub_title: 345 Chambers St, New York, NY 10282
 
   - title: PROJECTS & WORK EXPERIENCE
     layout: list
     content:
       - layout: left
         title: DevOps at Intersection
-        quote: >
+        caption: >
           // Formerly, Control Group
         description: |
           Worked with DevOps team to build an internal python-based web application that interfaced
@@ -47,7 +47,7 @@ content:
 
       - layout: left
         title: Quadrocopter Development at Intersection
-        quote: >
+        caption: >
           // Formerly, Control Group
         description: |
           Worked with a small team with robotics experience to build and program an
@@ -56,7 +56,7 @@ content:
 
       - layout: left
         title: Programming & Security Competitions
-        quote: >
+        caption: >
           // ICPC, CSAW CTF, UFO CTF, & picoCTF
         description: |
           Competed in the International Collegiate Programming Contest (ICPC). Competed in several
@@ -107,7 +107,7 @@ content:
 
 # TODO
 # - fix messy a.html link handling
-# - Change all double quotes to single quotes
+# - Change all double quotes to single quotes (or no quotes?)
 # - remove/add unnecessary/necessary Liquid strips
 # - separate light and dark css into named sections
 # - Strip all unused variables from files

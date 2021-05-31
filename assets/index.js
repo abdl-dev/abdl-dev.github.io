@@ -1,8 +1,3 @@
-function currentYear() {
-	date = new Date();
-	return document.write(date.getFullYear());
-}
-
 function autoColorScheme() {
 	if (window.matchMedia("(prefers-color-scheme: light)").matches) {
 		document.body.classList.add("light");
