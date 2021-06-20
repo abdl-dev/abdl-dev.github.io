@@ -18,26 +18,22 @@ content:
   - title: EDUCATION
     layout: list
     content:
-      - layout: left
-        title: Saint Louis University
+      - title: Saint Louis University
         sub_title: 1 North Grand Boulevard, St. Louis, MO 63103
         description: |
             - Major: Computer Science
             - Minor: Mathematics
 
-      - layout: left
-        title: Hunter College
+      - title: Hunter College
         sub_title: 695 Park Ave, New York, NY 10065
 
-      - layout: left
-        title: Stuyvesant High School
+      - title: Stuyvesant High School
         sub_title: 345 Chambers St, New York, NY 10282
 
   - title: PROJECTS & WORK EXPERIENCE
     layout: list
     content:
-      - layout: left
-        title: DevOps at Intersection
+      - title: DevOps at Intersection
         caption: >
           // Formerly, Control Group
         description: |
@@ -45,8 +41,7 @@ content:
           with several AWS services to provide user-friendly, human-interpretable Zendesk tickets
           for company clients. Currently in production status.
 
-      - layout: left
-        title: Quadrocopter Development at Intersection
+      - title: Quadrocopter Development at Intersection
         caption: >
           // Formerly, Control Group
         description: |
@@ -54,8 +49,7 @@ content:
           ArduPilot-controlled UAV incorporating GPS, magnetometer-based orientation, sonar-based
           speed control, and an accelerometer/gyroscope for feedback.
 
-      - layout: left
-        title: Programming & Security Competitions
+      - title: Programming & Security Competitions
         caption: >
           // ICPC, CSAW CTF, UFO CTF, & picoCTF
         description: |
@@ -65,36 +59,31 @@ content:
           exploitation, and cryptography. Ranked 38th internationally in UFO CTF and 42nd nationally
           in picoCTF. (Team Qubit)
 
-      - layout: left
-        title: LWJGL Game Development
+      - title: LWJGL Game Development
         description: |
           Developed 3D arcade game that interfaces with a server, with dynamic web content
           displaying animated score updates in real time, incorporating multiple graphics and web
           development tools/libraries.
 
-      - layout: left
-        title: NetLogo Game Development
+      - title: NetLogo Game Development
         description: |
           Developed multiple fully featured ports of popular mobile games, rewritten in NetLogo.
           Games include Defender, a feature-complete port of a dynamic-difficulty wave defense game,
           Line Runner, and a variation of B-Shooter.
 
-      - layout: left
-        title: Stuy++
+      - title: Stuy++
         description: |
           Started and led team with varying experience in development of new technology to modernize
           school. Developed networked monitoring system (wireless mesh) for unreliable escalators
           using Arduino and XBee.
 
-      - layout: left
-        title: Software Engineering at FIRST Robotics
+      - title: Software Engineering at FIRST Robotics
         description: |
           Led team in developing software for multi-system robot. Won first place at New York City
           Regional, won Chairman’s Award at Connecticut Regional, and competed in the FIRST
           Championship. (FRC)
 
-      - layout: left
-        description: |
+      - description: |
           **Miscellaneous:** Putnam Mathematical Competition, TEDxStuyvesantHS (Organizer)
 
   - title: TECHNICAL SKILLS
@@ -106,6 +95,7 @@ content:
         language processing, security, cryptography, compilers, graphics, web, various math
 
 # TODO
+# - consider making technical skills section a two-column aligned view
 # - fix messy a.html link handling
 # - Change all double quotes to single quotes (or no quotes?)
 # - remove/add unnecessary/necessary Liquid strips
@@ -115,9 +105,8 @@ content:
 # - change everything to 4-width hard tabs
 # - restructure all css
 # - restructure directory and files (remove unnecessary files)
-# - Add favicon.ico
 # - rewrite to only use .col-md
-# - figure out how to do axis text for contact info
+# - figure out how to do axis text for contact info and add padding to make lengths equal
 # - fix email underline
 # - look at benkurtovic.com to see if I wanna include any elements (such as copyright)
 # - do separate branch that is bootstrap-free

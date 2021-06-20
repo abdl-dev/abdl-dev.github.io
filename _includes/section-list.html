@@ -1,6 +1,6 @@
 <div class="col-12 col-md-9 col-print-12">
     {%- for item in include.content -%}
-      <div class="layout layout-{{item.layout | default: 'left'}}">
+      <div class="layout-list">
         <div class="details">
             {%- if item.title -%}<h5 style="display: inline-block">{{ item.title }}</h5>{%- endif -%}
           {%- if item.caption -%}
