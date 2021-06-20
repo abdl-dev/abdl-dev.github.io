@@ -2,7 +2,7 @@
     {%- for item in include.content -%}
       <div class="layout layout-{{item.layout | default: 'left'}}">
         <div class="details">
-            {%- if item.title -%}<h4 style="display: inline-block">{{ item.title }}</h4>{%- endif -%}
+            {%- if item.title -%}<h5 style="display: inline-block">{{ item.title }}</h5>{%- endif -%}
           {%- if item.caption -%}
             <p class="caption" style="display: inline-block">{{ item.caption }}</p>
           {%- endif -%}
