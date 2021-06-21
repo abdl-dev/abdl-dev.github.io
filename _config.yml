@@ -15,22 +15,22 @@ linkedin: abdl
 resume: assets/resume.pdf
 
 content:
-  - title: EDUCATION
+  - section-title: EDUCATION
     layout: list
     content:
       - title: Saint Louis University
-        subtitle: 1 North Grand Boulevard, St. Louis, MO 63103
+        sub-title: 1 North Grand Boulevard, St. Louis, MO 63103
         description: |
             - Major: Computer Science
             - Minor: Mathematics
 
       - title: Hunter College
-        subtitle: 695 Park Ave, New York, NY 10065
+        sub-title: 695 Park Ave, New York, NY 10065
 
       - title: Stuyvesant High School
-        subtitle: 345 Chambers St, New York, NY 10282
+        sub-title: 345 Chambers St, New York, NY 10282
 
-  - title: PROJECTS & WORK EXPERIENCE
+  - section-title: PROJECTS & WORK EXPERIENCE
     layout: list
     content:
       - title: DevOps at Intersection
@@ -86,7 +86,7 @@ content:
       - description: |
           **Miscellaneous:** Putnam Mathematical Competition, TEDxStuyvesantHS (Organizer)
 
-  - title: TECHNICAL SKILLS
+  - section-title: TECHNICAL SKILLS
     layout: text
     content: |
         **Languages:** Python, C, C++, Java, JavaScript, Haskell, Go, x86, Lisp/Scheme\
@@ -112,3 +112,4 @@ content:
 # - do separate branch that is bootstrap-free
 # - consolidate section-list and section-text in one include with conditional
 # - consider box shadow for location box
+# - simplify layouts and containers

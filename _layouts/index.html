@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	{% include head.html %}
+	{%- include head.html -%}
 	<body>
 	<script src="/assets/index.js"></script>
-	{% if site.color-scheme == 'auto' %}
+	{%- if site.color-scheme == 'auto' -%}
 	<script>autoColorScheme()</script>
-	{% else %}
+	{%- else -%}
 	<script>setColorScheme("{{ site.color-scheme }}")</script>
-	{% endif %}
+	{%- endif -%}
 		{%- include header.html -%}
 		<main>
-			{% for section in site.content %}
-			<div class="container {{ section.layout }}-container">
+			{%- for each in site.content -%}
+			<div class="container">
 				<div class="row">
-					<div class="col-12 col-md-3 col-print-12">
-						<h2>{{ section.title }}</h2>
-					</div>
-					{%- include section-{{ section.layout }}.html content=section.content -%}
+					{%- include section.html section-title=each.section-title -%}
+					{%- include section-{{ each.layout }}.html content=each.content -%}
 				</div>
 			</div>
-			{% endfor %}
+			{%- endfor -%}
 		</main>
 		{%- include footer.html -%}
 	</body>

@@ -22,10 +22,8 @@
 }
 
 .container {
+	max-width: 960px;
 	margin-bottom: 1.5rem;
-	@media print {
-		margin-top: 20px;
-	}
 }
 
 .header-container {
@@ -59,23 +57,26 @@
 }
 
 
-.list-container, .text-container {
-	h3 {
-		margin-bottom: 0;
-	}
+.section-text{
 }
-
-.layout-text{
-}
-.layout-list {
+.section-list {
 	margin-bottom: 1.0rem;
 	display: flex;
 	flex-direction: column;
 
-	.title {
+	.heading {
 		margin-bottom: 0.2rem;
 
-		.subtitle {
+		.title {
+			margin: 0 0 0 0;
+			display: inline;
+
+			a {
+				font-weight: 500;
+			}
+		}
+
+		.sub-title {
 			font-size: 1.0rem;
 			text-align: inherit;
 			font-weight: 300;
@@ -94,14 +95,6 @@
 			margin-left: 0.5rem;
 		}
 
-		h5 {
-			margin: 0 0 0 0;
-			display: inline;
-
-			a {
-				font-weight: 500;
-			}
-		}
 	}
 }
 
@@ -121,8 +114,4 @@
 		font-style: italic;
 		font-weight: 300;
 	}
-}
-
-.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-	max-width: 960px;
 }
