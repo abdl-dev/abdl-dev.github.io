@@ -54,9 +54,23 @@
 		width: 16.66666667%;
 	}
 	.col-md-1 {
-		width:8.33333333%;
+		width:  8.33333333%;
 	}
 	.col-print-12 {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header-container div{
+		text-align: center;
+	}
+
+	.header-right p {
+		text-align: center;
+	}
+
+	.header-left {
+		margin-top: 0px;
 	}
 }

@@ -19,16 +19,16 @@ content:
     layout: list
     content:
       - title: Saint Louis University
-        sub_title: 1 North Grand Boulevard, St. Louis, MO 63103
+        subtitle: 1 North Grand Boulevard, St. Louis, MO 63103
         description: |
             - Major: Computer Science
             - Minor: Mathematics
 
       - title: Hunter College
-        sub_title: 695 Park Ave, New York, NY 10065
+        subtitle: 695 Park Ave, New York, NY 10065
 
       - title: Stuyvesant High School
-        sub_title: 345 Chambers St, New York, NY 10282
+        subtitle: 345 Chambers St, New York, NY 10282
 
   - title: PROJECTS & WORK EXPERIENCE
     layout: list
@@ -111,3 +111,4 @@ content:
 # - look at benkurtovic.com to see if I wanna include any elements (such as copyright)
 # - do separate branch that is bootstrap-free
 # - consolidate section-list and section-text in one include with conditional
+# - consider box shadow for location box

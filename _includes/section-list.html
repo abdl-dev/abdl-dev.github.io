@@ -1,16 +1,17 @@
 <div class="col-12 col-md-9 col-print-12">
     {%- for item in include.content -%}
       <div class="layout-list">
-        <div class="details">
-            {%- if item.title -%}<h5 style="display: inline-block">{{ item.title }}</h5>{%- endif -%}
-          {%- if item.caption -%}
-            <p class="caption" style="display: inline-block">{{ item.caption }}</p>
+        <div class="title">
+            {%- if item.title -%}
+			<h5>{{ item.title }}</h5>
+			{%- endif -%}
+			  {%- if item.caption -%}
+				<div class="caption">{{ item.caption }}</div>
           {%- endif -%}
-          {%- if item.sub_title -%}<p>{{ item.sub_title }}</p>{%- endif -%}
+          {%- if item.subtitle -%}
+			<div class="subtitle">{{ item.subtitle }}</div>{%- endif -%}
         </div>
-        <div class="content">
           {{ item.description | strip | markdownify }}
-        </div>
       </div>
     {%- endfor -%}
 </div>
