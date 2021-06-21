@@ -2,8 +2,8 @@
 	<div class="row">
 		<div class="col-12 col-md-7 header-left">
 			<h1>{{ site.name }}</h1>
-			<h3>{{ site.title }}</h3>
-			<h4><mark>{{ site.location }}</mark></h4>
+			<h2>{{ site.title }}</h2>
+			<h3><mark>{{ site.location }}</mark></h3>
 		</div>
 		<div class="col-12 col-md-5 header-right">
 			<ul class="icons">
@@ -23,12 +23,8 @@
 					</a>
 				</li>
 			</ul>
-			<p>
-				<a href="mailto:{{ site.email }}">{{ site.email }}</a> | <i class="fas fa-envelope-open"></i>
-			</p>
-			<p>
-				{{ site.phone }} | <i class="fas fa-phone-alt"></i>
-			</p>
+			<p>{{ site.phone }}</p>
+			<p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 		</div>
 	</div>
 </div>

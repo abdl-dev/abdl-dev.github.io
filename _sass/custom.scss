@@ -1,24 +1,43 @@
 .light {
-	background-color: #ffffff;
-	color: #333;
-
+	color: #1B1B1B;
+	background-color: #FFFFFF;
+	mark {
+		color: #FFFFFF;
+		background-color: #1B1B1B;
+		padding: 2px 4px;
+		border-radius: 4px;
+	}
+	a {
+		color: #FF6666;
+		text-decoration: none;
+		transition: color 100ms ease;
+	}
+	a:active,
+	a:focus,
+	a:hover {
+		color: #1B1B1B;
+	}
 }
 
 .dark {
-	background-color: #222;
-	color: #e6e6e6;
+	color: #EAEAEA;
+	background-color: #1B1B1B;
 	mark {
-		color: #222;
-		background-color: #e6e6e6;
+		color: #1B1B1B;
+		background-color: #EAEAEA;
+		padding: 2px 4px;
+		border-radius: 4px;
 	}
-
 	a {
-		color: #477dca;
+		color: #FF6666;
+		text-decoration: none;
+		transition: color 100ms ease;
 	}
-}
-
-.center-text {
-	text-align: center;
+	a:active,
+	a:focus,
+	a:hover {
+		color: #EAEAEA;
+	}
 }
 
 .container {
@@ -28,11 +47,9 @@
 
 .header-container {
 	margin-top: 2rem;
+	margin-bottom: 1.5rem;
 }
 
-.header-right {
-	text-align: right;
-}
 
 .header-left {
 	@media print {
@@ -41,21 +58,11 @@
 }
 
 .header-right p {
-	font-size: 1.0rem;
 	text-align: right;
+	line-height: 1.2;
+	font-size: 1.2rem;
+	margin: 0rem 0.4rem;
 }
-
-
-
-.header-right p {
-	margin-bottom: 3px;
-}
-
-.header-right a{
-	color:inherit;
-	font-weight:500;
-}
-
 
 .section-text{
 }
@@ -68,7 +75,6 @@
 		margin-bottom: 0.2rem;
 
 		.title {
-			margin: 0 0 0 0;
 			display: inline;
 
 			a {
@@ -95,6 +101,9 @@
 			margin-left: 0.5rem;
 		}
 
+	}
+	.description {
+		text-align: justify;
 	}
 }
 
