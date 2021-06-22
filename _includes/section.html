@@ -1,9 +1,7 @@
-{%- if include.text-only -%}
 <div class="col-12 col-md-9 col-print-12">
+	{%- if include.text-only -%}
 	{{ include.content | markdownify }}
-</div>
-{%- else -%}
-<div class="col-12 col-md-9 col-print-12">
+	{%- else -%}
 	{%- for item in include.content -%}
 	<div class="item">
 		<div class="heading">
@@ -22,5 +20,5 @@
 		{%- endif -%}
 	</div>
 	{%- endfor -%}
+	{%- endif -%}
 </div>
-{%- endif -%}
