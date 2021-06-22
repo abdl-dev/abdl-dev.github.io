@@ -1,3 +1,65 @@
+.light {
+}
+.dark {
+	.button-circle::before {
+		box-shadow: inset 0 0 0 35px #EAEAEA;
+	}
+	.button.button-circle {
+		color: #1B1B1B;
+	}
+	.button-circle:hover {
+		color: #EAEAEA;
+	}
+	.button-circle:hover::before {
+		box-shadow: inset 0 0 0 2px #EAEAEA;
+	}
+	.icons i {
+		background: none;
+		color: #222;
+	}
+	.icons a:hover i {
+		color: #EAEAEA;
+	}
+}
+
+ul.icons a:hover {
+	background: rgba(0, 0, 0, 0.025);
+}
+
+ul.icons li {
+	display: inline-block;
+}
+
+ul.icons a {
+	-moz-transition: background-color 0.25s ease-in-out;
+	-webkit-transition: background-color 0.25s ease-in-out;
+	-ms-transition: background-color 0.25s ease-in-out;
+	transition: background-color 0.25s ease-in-out;
+	display: inline-block;
+	width: 2.75rem;
+	height: 2.75rem;
+	line-height: 2.8rem;
+	text-align: center;
+	border: 0;
+	box-shadow: none;
+	padding:0;
+	border-radius: 100%;
+	color: #aaa;
+}
+
+.icons {
+	padding: 0;
+	font-size: 1rem;
+	margin-top: 1px;
+	margin-bottom: 0.25rem;
+	text-align: right;
+}
+
+.icons i {
+	font-size: 30px;
+	line-height:60px;
+}
+
 .button {
 	min-width: 150px;
 	border: none;
@@ -52,68 +114,4 @@
 	box-shadow: inset 0 0 0 2px #1B1B1B;
 	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
-}
-
-ul.icons a:hover {
-	background: rgba(0, 0, 0, 0.025);
-}
-
-ul.icons li {
-	display: inline-block;
-}
-
-ul.icons a {
-	-moz-transition: background-color 0.25s ease-in-out;
-	-webkit-transition: background-color 0.25s ease-in-out;
-	-ms-transition: background-color 0.25s ease-in-out;
-	transition: background-color 0.25s ease-in-out;
-	display: inline-block;
-	width: 2.75rem;
-	height: 2.75rem;
-	line-height: 2.8rem;
-	text-align: center;
-	border: 0;
-	box-shadow: none;
-	padding:0;
-	border-radius: 100%;
-	color: #aaa;
-}
-
-.icons i {
-	font-size: 30px;
-	line-height:60px;
-}
-
-.icons {
-	padding: 0;
-	font-size: 1rem;
-	margin-top: 1px;
-	margin-bottom: 0.25rem;
-	text-align: right;
-}
-
-.dark {
-	.button-circle::before {
-		box-shadow: inset 0 0 0 35px #EAEAEA;
-	}
-
-	.button.button-circle {
-		color: #1B1B1B;
-	}
-
-	.button-circle:hover {
-		color: #EAEAEA;
-	}
-
-	.button-circle:hover::before {
-		box-shadow: inset 0 0 0 2px #EAEAEA;
-	}
-	.icons i {
-		background: none;
-		color: #222;
-	}
-
-	.icons a:hover i {
-		color: #EAEAEA;
-	}
 }
