@@ -2,12 +2,12 @@
 <html lang="en-US">
 	{%- include head.html -%}
 	<body>
-	<script src="/assets/index.js"></script>
-	{%- if site.color-scheme == 'auto' -%}
-	<script>autoColorScheme()</script>
-	{%- else -%}
-	<script>setColorScheme("{{ site.color-scheme }}")</script>
-	{%- endif -%}
+		<script src="/assets/index.js"></script>
+		{%- if site.color-scheme == 'auto' -%}
+		<script>autoColorScheme()</script>
+		{%- else -%}
+		<script>setColorScheme("{{ site.color-scheme }}")</script>
+		{%- endif -%}
 		{%- include header.html -%}
 		<main>
 			{%- for item in site.content -%}

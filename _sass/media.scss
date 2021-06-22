@@ -1,12 +1,13 @@
 @media screen and (max-width: 767px) {
-	.header-container div{
-		text-align: center;
-	}
-	.header-right p {
+	.header-container {
 		text-align: center;
 	}
 	.header-left {
+		text-align: center;
 		margin-top: 0px;
+	}
+	.header-right {
+		text-align: center;
 	}
 	.icons {
 		text-align: center;
@@ -22,7 +23,7 @@
 		margin-top: 0rem;
 	}
 	.icons {
-		display: none !important;
+		display: none;
 	}
 	.item {
 		break-inside: avoid;

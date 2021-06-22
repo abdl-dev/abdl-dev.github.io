@@ -21,8 +21,8 @@ content:
       - title: Saint Louis University
         sub-title: 1 North Grand Boulevard, St. Louis, MO 63103
         description: |
-            - Major: Computer Science
-            - Minor: Mathematics
+          - Major: Computer Science
+          - Minor: Mathematics
 
       - title: Hunter College
         sub-title: 695 Park Ave, New York, NY 10065
@@ -89,27 +89,15 @@ content:
   - section-title: TECHNICAL SKILLS
     layout: text
     content: |
-        **Languages:** Python, C, C++, Java, JavaScript, Haskell, Go, x86, Lisp/Scheme\
-        **Skills:** Linux, Git, Vim, AWS, SQL, Node.js, Flask, OpenGL, LWJGL, Arduino\
-        **Experience:** distributed systems, operating systems, dynamic programming, natural
-        language processing, security, cryptography, compilers, graphics, web, various math
+      **Languages:** Python, C, C++, Java, JavaScript, Haskell, Go, x86, Lisp/Scheme\
+      **Skills:** Linux, Git, Vim, AWS, SQL, Node.js, Flask, OpenGL, LWJGL, Arduino\
+      **Experience:** distributed systems, operating systems, dynamic programming, natural
+      language processing, security, cryptography, compilers, graphics, web, various math
 
 # TODO
-# - consider making technical skills section a two-column aligned view
-# - fix messy a.html link handling
 # - Change all double quotes to single quotes (or no quotes?)
+# - look over all files a final time to check style and consistency
 # - remove/add unnecessary/necessary Liquid strips
-# - separate light and dark css into named sections
-# - Strip all unused variables from files
-# - Make all the site content indentations line up
-# - change everything to 4-width hard tabs
-# - restructure all css
-# - restructure directory and files (remove unnecessary files)
-# - rewrite to only use .col-md
-# - figure out how to do axis text for contact info and add padding to make lengths equal
-# - fix email underline
-# - look at benkurtovic.com to see if I wanna include any elements (such as copyright)
-# - do separate branch that is bootstrap-free
-# - consolidate section-list and section-text in one include with conditional
+# - restructure icons/button light/dark things into a central one
+# - understand and clean up button.scss
 # - consider box shadow for location box
-# - simplify layouts and containers
