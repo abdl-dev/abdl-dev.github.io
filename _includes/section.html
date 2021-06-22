@@ -1,3 +1,26 @@
-<div class="col-12 col-md-3 col-print-12">
-	<h4>{{ include.section-title }}</h4>
+{%- if include.text-only -%}
+<div class="col-12 col-md-9 col-print-12">
+	{{ include.content | markdownify }}
 </div>
+{%- else -%}
+<div class="col-12 col-md-9 col-print-12">
+	{%- for item in include.content -%}
+	<div class="item">
+		<div class="heading">
+			{%- if item.title -%}
+			<h5 class="title">{{ item.title }}</h5>
+			{%- endif -%}
+			{%- if item.caption -%}
+			<p class="caption">{{ item.caption }}</p>
+			{%- endif -%}
+			{%- if item.sub-title -%}
+			<p class="sub-title">{{ item.sub-title }}</p>
+			{%- endif -%}
+		</div>
+		{%- if item.description -%}
+		<div class="description">{{ item.description | markdownify }}</div>
+		{%- endif -%}
+	</div>
+	{%- endfor -%}
+</div>
+{%- endif -%}

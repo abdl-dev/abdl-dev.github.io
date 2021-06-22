@@ -16,7 +16,7 @@ resume: assets/resume.pdf
 
 content:
   - section-title: EDUCATION
-    layout: list
+    text-only: false
     content:
       - title: Saint Louis University
         sub-title: 1 North Grand Boulevard, St. Louis, MO 63103
@@ -31,7 +31,7 @@ content:
         sub-title: 345 Chambers St, New York, NY 10282
 
   - section-title: PROJECTS & WORK EXPERIENCE
-    layout: list
+    text-only: false
     content:
       - title: DevOps at Intersection
         caption: >
@@ -87,7 +87,7 @@ content:
           **Miscellaneous:** Putnam Mathematical Competition, TEDxStuyvesantHS (Organizer)
 
   - section-title: TECHNICAL SKILLS
-    layout: text
+    text-only: true
     content: |
       **Languages:** Python, C, C++, Java, JavaScript, Haskell, Go, x86, Lisp/Scheme\
       **Skills:** Linux, Git, Vim, AWS, SQL, Node.js, Flask, OpenGL, LWJGL, Arduino\
@@ -101,3 +101,4 @@ content:
 # - restructure icons/button light/dark things into a central one
 # - understand and clean up button.scss
 # - consider box shadow for location box
+# - incorporate more of the scss features
