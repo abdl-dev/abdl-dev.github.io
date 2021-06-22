@@ -13,8 +13,7 @@
 			{%- for item in site.content -%}
 			<div class="container">
 				<div class="row">
-					{%- include section-title.html section-title=item.section-title -%}
-					{%- include section.html text-only=item.text-only content=item.content -%}
+					{%- include section.html section-title=item.section-title text-only=item.text-only content=item.content -%}
 				</div>
 			</div>
 			{%- endfor -%}
