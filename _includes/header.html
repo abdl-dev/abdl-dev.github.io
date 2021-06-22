@@ -6,23 +6,17 @@
 			<h3><mark>{{ site.location }}</mark></h3>
 		</div>
 		<div class="col-12 col-md-5 header-right">
-			<ul class="icons">
-				<li>
-					<a href='https://github.com/{{ site.github }}' class="button button-circle">
-						<i class="fab fa-github" title="GitHub"></i>
-					</a>
-				</li>
-				<li>
-					<a href='https://linkedin.com/in/{{ site.linkedin }}' class="button button-circle">
-						<i class="fab fa-linkedin" title="LinkedIn"></i>
-					</a>
-				</li>
-				<li>
-					<a href='{{ site.resume }}' class="button button-circle">
-						<i class="fas fa-align-left" title="Résumé"></i>
-					</a>
-				</li>
-			</ul>
+			<div class="icons">
+				<a href='https://github.com/{{ site.github }}' class="circle">
+					<i class="fab fa-github" title="GitHub"></i>
+				</a>
+				<a href='https://linkedin.com/in/{{ site.linkedin }}' class="circle">
+					<i class="fab fa-linkedin" title="LinkedIn"></i>
+				</a>
+				<a href='{{ site.resume }}' class="circle">
+					<i class="fas fa-align-left" title="Résumé"></i>
+				</a>
+			</div>
 			<p class="info">{{ site.phone }}</p>
 			<p class="info"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 		</div>

@@ -1,16 +1,16 @@
 .light {
 }
 .dark {
-	.button-circle::before {
+	.circle::before {
 		box-shadow: inset 0 0 0 35px #EAEAEA;
 	}
-	.button.button-circle {
+	.circle {
 		color: #1B1B1B;
 	}
-	.button-circle:hover {
+	.circle:hover {
 		color: #EAEAEA;
 	}
-	.button-circle:hover::before {
+	.circle:hover::before {
 		box-shadow: inset 0 0 0 2px #EAEAEA;
 	}
 	.icons i {
@@ -22,96 +22,61 @@
 	}
 }
 
-ul.icons a:hover {
-	background: rgba(0, 0, 0, 0.025);
-}
-
-ul.icons li {
-	display: inline-block;
-}
-
-ul.icons a {
-	-moz-transition: background-color 0.25s ease-in-out;
-	-webkit-transition: background-color 0.25s ease-in-out;
-	-ms-transition: background-color 0.25s ease-in-out;
-	transition: background-color 0.25s ease-in-out;
-	display: inline-block;
-	width: 2.75rem;
-	height: 2.75rem;
-	line-height: 2.8rem;
-	text-align: center;
-	border: 0;
-	box-shadow: none;
-	padding:0;
-	border-radius: 100%;
-	color: #aaa;
-}
-
 .icons {
+	margin: 0.25rem 0rem;
+	i {
+		color: #FFFFFF;
+		background: none;
+		font-size: 2rem;
+		line-height: 4rem;
+	}
+}
+
+.circle {
+	width: 4rem;
+	height: 4rem;
+	min-width: 0;
 	padding: 0;
-	font-size: 1rem;
-	margin-top: 1px;
-	margin-bottom: 0.25rem;
-	text-align: right;
-}
+	transition: color 0.3s;
 
-.icons i {
-	font-size: 30px;
-	line-height:60px;
-}
-
-.button {
-	min-width: 150px;
-	border: none;
-	background: none;
-	color: inherit;
-	vertical-align: middle;
-	position: relative;
-	z-index: 1;
-	-webkit-backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	border-radius: 0;
-	float: none;
-	margin: 0 auto;
-	margin-top: 0px;
 	display: inline-block;
-	font-weight: 400;
-	max-width: 400px;
+	border: none;
+	border-radius: 0;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 1;
 }
 
-.button-circle::before {
+.circle::before {
+	color: #1B1B1B; 
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border-radius: inherit;
+	border-radius: 100%;
 	z-index: -1;
-	box-shadow: inset 0 0 0 35px #1B1B1B;
-	-webkit-transform: scale3d(0.9, 0.9, 1);
-	transform: scale3d(0.9, 0.9, 1);
-	-webkit-transition: box-shadow 0.3s, -webkit-transform 0.3;
-	transition: box-shadow 0.3s, transform 0.3s;
+
+	box-shadow: inset 0 0 0 32px #1B1B1B;
+	transform: scale3d(0.95, 0.95, 1);
+	transition: box-shadow 250ms, transform 250ms;
 }
 
-.button.button-circle:focus,
-.button.button-circle {
-	width: 60px;
-	height: 60px;
-	min-width: 0;
-	padding: 0;
-	color: #fff;
-	-webkit-transition: color 0.3s;
-	transition: color 0.3s;
-}
-
-.button-circle:hover {
+.circle:active {
 	color: #1B1B1B;
 }
 
-.button-circle:hover::before {
-	box-shadow: inset 0 0 0 2px #1B1B1B;
-	-webkit-transform: scale3d(1, 1, 1);
+
+.circle:focus,
+.circle:hover {
+	i {
+		color: #1B1B1B;
+	}
+}
+
+.circle:hover::before {
+	box-shadow: inset 0 0 0 4px #1B1B1B;
 	transform: scale3d(1, 1, 1);
 }
