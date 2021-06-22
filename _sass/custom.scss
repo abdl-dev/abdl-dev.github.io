@@ -10,7 +10,7 @@
 	a {
 		color: #FF6666;
 		text-decoration: none;
-		transition: color 100ms ease;
+		transition: color 200ms ease;
 	}
 	a:active,
 	a:focus,
@@ -31,7 +31,7 @@
 	a {
 		color: #FF6666;
 		text-decoration: none;
-		transition: color 100ms ease;
+		transition: color 200ms ease;
 	}
 	a:active,
 	a:focus,
@@ -47,73 +47,47 @@
 
 .header-container {
 	margin-top: 2rem;
-	margin-bottom: 1.5rem;
 }
 
-.header-right p {
+.header-left {
+	text-align: left;
+}
+
+.header-right {
 	text-align: right;
-	line-height: 1.2;
-	font-size: 1.2rem;
-	margin: 0rem 0.4rem;
+	.info {
+		font-size: 1.2rem;
+		line-height: 1.2;
+		margin-right: 0.35rem;
+	}
 }
 
-.text{
+.footer-container {
+	text-align: center;
+	font-style: italic;
+	font-weight: 300;
+	margin-top: 4rem;
+	margin-bottom: 1rem;
 }
-.list {
-	display: flex;
-	flex-direction: column;
+
+.item {
 	margin-bottom: 1.0rem;
-
 	.heading {
 		margin-bottom: 0.2rem;
-
 		.title {
 			display: inline;
-
-			a {
-				font-weight: 500;
-			}
 		}
-
-		.sub-title {
-			font-size: 1.0rem;
-			text-align: inherit;
-			font-weight: 300;
-
-			b {
-				font-weight: 500;
-			}
-		}
-
 		.caption {
 			display: inline;
-			color: inherit;
 			font-style: italic;
 			font-weight: 300;
-			font-size: 1.0rem;
 			margin-left: 0.5rem;
 		}
-
+		.sub-title {
+			font-weight: 300;
+		}
 	}
 	.description {
 		text-align: justify;
-	}
-}
-
-
-.footer-container {
-	margin-top: 4rem;
-	margin-bottom: 1rem;
-
-	a {
-		color: inherit;
-		font-style: italic;
-		font-weight: 300;
-	}
-
-	p {
-		text-align: center;
-		font-style: italic;
-		font-weight: 300;
 	}
 }

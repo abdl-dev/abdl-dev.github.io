@@ -10,11 +10,11 @@
 	{%- endif -%}
 		{%- include header.html -%}
 		<main>
-			{%- for each in site.content -%}
+			{%- for item in site.content -%}
 			<div class="container">
 				<div class="row">
-					{%- include section.html section-title=each.section-title -%}
-					{%- include section-{{ each.layout }}.html content=each.content -%}
+					{%- include section.html section-title=item.section-title -%}
+					{%- include section-{{ item.layout }}.html content=item.content -%}
 				</div>
 			</div>
 			{%- endfor -%}
