@@ -97,7 +97,7 @@ content:
 # TODO
 # - Change all double quotes to single quotes (or no quotes?)
 # - look over all files a final time to check style and consistency
-# - remove/add unnecessary/necessary Liquid strips
+# - remove/add unnecessary/necessary Liquid whitespace strips
 # - restructure icons/button light/dark things into a central one
 # - understand and clean up button.scss
 # - consider box shadow for location box
