@@ -1,3 +1,4 @@
+{% assign phone_raw = site.phone | remove: "(" | remove: ")" | replace: " ", "-" %}
 <div class="container header-container">
 	<div class="row">
 		<div class="col-12 col-md-7 header-left">
@@ -17,8 +18,12 @@
 					<i class="fas fa-align-left" title="Résumé"></i>
 				</a>
 			</div>
-			<p class="info"><a href="tel:{{ site.phone | remove: "(" | replace: ") ", "-" }}">{{ site.phone }}</a></p>
-			<p class="info"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+			<p class="info">
+				<a href="tel:{{ phone_raw }}">{{ site.phone }}</a>
+			</p>
+			<p class="info">
+				<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+			</p>
 		</div>
 	</div>
 </div>
