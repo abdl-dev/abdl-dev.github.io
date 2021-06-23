@@ -1,42 +1,48 @@
+$light-primary: #1B1B1B;
+$dark-primary: #EAEAEA;
+$light-secondary: #FFFFFF;
+$dark-secondary: #1B1B1B;
+$highlight: #FF6666;
+
 .light {
-	color: #1B1B1B;
-	background-color: #FFFFFF;
+	color: $light-primary;
+	background-color: $light-secondary;
 	mark {
-		color: #FFFFFF;
-		background-color: #1B1B1B;
+		color: $light-secondary;
+		background-color: $light-primary;
 		padding: 2px 4px;
 		border-radius: 4px;
 	}
 	a {
-		color: #1B1B1B;
+		color: $light-primary;
 		text-decoration: none;
 		transition: color 200ms;
 	}
 	a:active,
 	a:focus,
 	a:hover {
-		color: #FF6666;
+		color: $highlight;
 	}
 }
 
 .dark {
-	color: #EAEAEA;
-	background-color: #1B1B1B;
+	color: $dark-primary;
+	background-color: $dark-secondary;
 	mark {
-		color: #1B1B1B;
-		background-color: #EAEAEA;
+		color: $dark-secondary;
+		background-color: $dark-primary;
 		padding: 2px 4px;
 		border-radius: 4px;
 	}
 	a {
-		color: #EAEAEA;
+		color: $dark-primary;
 		text-decoration: none;
 		transition: color 200ms;
 	}
 	a:active,
 	a:focus,
 	a:hover {
-		color: #FF6666;
+		color: $highlight;
 	}
 }
 
