@@ -102,3 +102,5 @@ content:
 # - understand and clean up button.scss
 # - consider box shadow for location box
 # - incorporate more of the scss features
+# - consider a light/dark toggle button
+# - figure out how to prevent line breaks when printing

@@ -8,14 +8,14 @@
 		border-radius: 4px;
 	}
 	a {
-		color: #FF6666;
+		color: #1B1B1B;
 		text-decoration: none;
-		transition: color 200ms ease;
+		transition: color 200ms;
 	}
 	a:active,
 	a:focus,
 	a:hover {
-		color: #1B1B1B;
+		color: #FF6666;
 	}
 }
 
@@ -29,14 +29,14 @@
 		border-radius: 4px;
 	}
 	a {
-		color: #FF6666;
+		color: #EAEAEA;
 		text-decoration: none;
-		transition: color 200ms ease;
+		transition: color 200ms;
 	}
 	a:active,
 	a:focus,
 	a:hover {
-		color: #EAEAEA;
+		color: #FF6666;
 	}
 }
 
@@ -58,7 +58,7 @@
 	.info {
 		font-size: 1.2rem;
 		line-height: 1.2;
-		margin: 0rem 0.35rem;
+		margin: 0rem 0.25rem;
 	}
 }
 
@@ -68,6 +68,21 @@
 	font-weight: 300;
 	margin-top: 4rem;
 	margin-bottom: 1rem;
+}
+
+.icons {
+	margin: 0.25rem 0rem;
+}
+
+.social i {
+	font-size: 3.5rem;
+	padding: 0.25rem;
+	transform: scale(0.95, 0.95);
+	transition: transform 250ms;
+}
+
+.social:hover i {
+	transform: scale(1, 1);
 }
 
 .item {
