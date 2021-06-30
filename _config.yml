@@ -41,7 +41,7 @@ content:
           with several AWS services to provide user-friendly, human-interpretable Zendesk tickets
           for company clients. Currently in production status.
 
-      - title: Quadrocopter Development at Intersection
+      - title: Quadcopter Development at Intersection
         caption: >
           // Formerly, Control Group
         description: |
