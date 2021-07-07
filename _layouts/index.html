@@ -3,7 +3,7 @@
     {%- include head.html -%}
     <body>
         <script src="/assets/index.js"></script>
-        {%- if site.color-scheme == 'auto' -%}
+        {%- if site.color-scheme == "auto" -%}
         <script>autoColorScheme()</script>
         {%- else -%}
         <script>setColorScheme("{{ site.color-scheme }}")</script>
