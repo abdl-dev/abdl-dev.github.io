@@ -39,7 +39,7 @@ content:
         description: |
           Worked with DevOps team to build an internal python-based web application that interfaced
           with several AWS services to provide user-friendly, human-interpretable Zendesk tickets
-          for company clients. Currently in production status.
+          for company clients. In production status.
 
       - title: Quadcopter Development at Intersection
         caption: >
